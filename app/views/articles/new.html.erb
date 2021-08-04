@@ -1,0 +1,14 @@
+<h1>Ajouter un article</h1>
+
+<%= form_with(model: @article, url: '/new_article') do |form| %>
+
+  <%= form.label :titre %>
+  <%= form.text_field :titre  %>
+
+  <%= form.label :contenu %>
+  <%= form.text_field :contenu %>
+
+  <%= form.submit 'Enregistrer' %>
+
+<% end %>
+
